@@ -1,0 +1,186 @@
+body {
+    margin: 0px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+button {
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(70, 70, 70, 0.89);
+    border: none;
+}
+
+.content-top {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(6, 155, 255, 0.973), rgba(100, 3, 255, 0.726));
+    display: flex;
+}
+
+.content-top-left {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    color: white;
+    padding: 50px;
+}
+
+.content-top-left>button {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.content-top-right {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.content-top-right-wrap {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.content-top-right img {
+    max-width: 300px;
+    min-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-top2 {
+    text-align: center;
+    font-family: 'gulim';
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content-top2 button {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.content-mid {
+    width: 100%;
+    height: 500px;
+    background-color: cornflowerblue;
+    text-align: center;
+    color: white;
+}
+
+.content-mid p {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.content-mid h2 {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.content-mid-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.content-mid-icon div {
+    width: 25%;
+    padding: 20px;
+}
+
+.content-bottom {
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-bottom-img {
+    width: 50%;
+    height: 50%;
+    color: white;
+    padding: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 1s;
+}
+
+.content-bottom div:nth-child(1) {
+    background-image: url(../img/portfolio-1.jpg);
+}
+.content-bottom div:nth-child(2) {
+    background-image: url(../img/portfolio-2.jpg);
+}
+.content-bottom div:nth-child(3) {
+    background-image: url(../img/portfolio-3.jpg);
+}
+.content-bottom div:nth-child(4) {
+    background-image: url(../img/portfolio-4.jpg);
+}
+
+.content-bottom-img:hover {
+    border: 20px solid white;
+}
+
+.bottom-link {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+}
+
+.bottom-link div {
+    width: 10%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .content-mid-icon div {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-top {
+        flex-wrap: wrap;
+        height: 600px;
+    }
+    .content-top-left {
+        height: 50%;
+        text-align: center;
+        margin: auto;
+    }
+    .content-top-right {
+        height: 50%;
+    }
+
+    .content-mid {
+        height: 800px;
+    }
+    .content-mid-icon div {
+        width: 100%;
+        height: 35%;
+    }
+
+    .content-bottom {
+        height: 800px;
+    }
+    .content-bottom-img {
+        width: 100%;
+        height: 25%;
+    }
+}
